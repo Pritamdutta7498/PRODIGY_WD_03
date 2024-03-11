@@ -5,6 +5,7 @@
     background-color: #f1faee;
 }
 
+
 h2 {
     text-align: center;
     font-size: 40px;
@@ -13,37 +14,32 @@ h2 {
 }
 
 .content {
-    width:80%;
+    width: 80%;
     margin: 0 auto;
     padding: 10px;
 
 }
 
-.mode{
+.mode {
     width: 50%;
     height: 30vh;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
 }
+
 .modeBtn {
-    min-width:50%;
+    min-width: 50%;
     margin: 5px;
-    background-color:#0077b6;
+    background-color: #0077b6;
     border-radius: 4px;
-    color:rgb(255, 255, 255);
-    padding:10px 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
     cursor: pointer;
     font-size: large;
-    transition: 0.20s ;
+    transition: 0.20s;
 
 }
-.modeBtn:hover{
-    background-color: #222;
-    color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 5px rgb(43, 30, 30);
-}
-    
 
 .game {
     width: 40%;
@@ -63,10 +59,38 @@ h2 {
     font-size: 30px;
     text-align: center;
     transition: 0.15s ease-in;
-
 }
 
 .box:hover {
     background-color: #1d3557;
     color: aliceblue;
+}
+
+.gameBtn {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+.resetBtn,
+.newGameBtn {
+    width: 20%;
+    text-align: center;
+    background-color: #0077b6;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: large;
+    transition: 0.20s;
+
+}
+
+.resetBtn:hover,
+.newGameBtn:hover,
+.modeBtn:hover {
+    background-color: #222;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(43, 30, 30);
 }
