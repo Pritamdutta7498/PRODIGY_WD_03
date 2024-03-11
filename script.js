@@ -14,5 +14,20 @@ const winPattern = [
     [1,4,7],
     [2,5,8],
   
+];
 
-]
+// select each box using forEach and addEventListener
+
+boxes.forEach((box)=>{
+    box.addEventListener('click', ()=>{
+        console.log('box was clicked');
+        if(turn0){
+            box.innerText = '0';
+            turn0 = false;
+        }else{
+            box.innerText = 'X';
+            turn0 = true;
+        }
+
+    })
+})
