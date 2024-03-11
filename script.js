@@ -28,6 +28,7 @@ boxes.forEach((box)=>{
             box.innerText = 'X';
             turn0 = true;
         }
+        box.disabled = true;
 
     })
 })
