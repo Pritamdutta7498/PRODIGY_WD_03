@@ -4,6 +4,7 @@ let resetBtn = document.querySelector('.reset-btn');
 
 let turn0 = true;
 
+// pattern  for the game (X and O)
 const winPattern = [
     [0,1,2],
     [3,4,5],
@@ -29,6 +30,7 @@ boxes.forEach((box)=>{
             turn0 = true;
         }
         box.disabled = true;
+
 
     })
 })
