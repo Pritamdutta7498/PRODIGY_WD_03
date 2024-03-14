@@ -17,6 +17,7 @@ const winPattern = [
   
 ];
 
+
 // select each box using forEach and addEventListener
 
 boxes.forEach((box)=>{
