@@ -31,7 +31,19 @@ boxes.forEach((box)=>{
             turn0 = true;
         }
         box.disabled = true;
-
+        checkWinner();
 
     })
 })
+
+// winner checking function
+const checkWinner = () =>{
+    for(let pattern of winPattern){
+        console.log(boxes[pattern[0]].innerText,
+            boxes[pattern[1]].innerText,
+            boxes[pattern[2]].innerText,
+            )
+             
+            
+    }
+}

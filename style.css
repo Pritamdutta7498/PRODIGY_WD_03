@@ -64,10 +64,6 @@ h2 {
     transition: 0.15s ease-in;
 }
 
-.box:hover {
-    background-color: #1d3557;
-    color: aliceblue;
-}
 
 .gameBtn {
     width: 100%;
