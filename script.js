@@ -35,6 +35,12 @@ boxes.forEach((box) => {
 
     })
 })
+// disable boxes if we get a winner
+const disableBoxes = () => {
+    for (let box of boxes) {
+        box.disabled = true;
+    }
+}
 
 // winner checking function
 const checkWinner = () => {
@@ -49,10 +55,12 @@ const checkWinner = () => {
         let pos3Val = boxes[pattern[2]].innerText;
 
         // postion value checking for winner
-        if(pos1Val != "" && pos2Val != "" && pos3Val != ""){
-            if(pos1Val === pos2Val && pos2Val === pos3Val){
-                console.log('Winner' , pos1Val)
-             document.getElementById('winner').innerText = `Congratulation Winner is: ${pos1Val}`;
+        if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
+            if (pos1Val === pos2Val && pos2Val === pos3Val) {
+                // console.log('Winner' , pos1Val)
+                document.getElementById('winner').innerText = `Congratulation Winner is: ${pos1Val}`;
+                disableBoxes();
+
             }
         }
 
